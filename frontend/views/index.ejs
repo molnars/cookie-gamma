@@ -1,0 +1,15 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown Selections</title>
+</head>
+<body>
+  <label for="dropdown">Select an option:</label>
+  <select id="dropdown">
+    <% dropdownOptions.forEach(option => { %>
+      <option value="<%= option %>"><%= option %></option>
+    <% }); %>
+  </select>
+</body>
+</html>
